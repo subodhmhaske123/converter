@@ -28,7 +28,6 @@ labHeader.setForeground(Color.white);
 panel.add(labHeader);
 
 String[] scale1 = {"Select Unit","Millimeters","Centimeters","Meters","Kilometers","Inches"};
-//String[] scale2 = {"Select Unit","Inches","Millimeters","Centimeters","Meters","Kilometers"};
 comboBox1 = new JComboBox(scale1);
 comboBox2 = new JComboBox(scale1);
 
@@ -104,14 +103,14 @@ else{result = 0.0;}
 String r = Double.toString(result); 
 txtOutput.setText(r);
 }
-
-
-
 };btnConvert.addActionListener(a);
+
+  
 ActionListener b = (ae) ->
 {
 System.exit(0);
 };btnExit.addActionListener(b);
+
 }
 }
 
